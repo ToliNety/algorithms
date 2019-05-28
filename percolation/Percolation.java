@@ -7,12 +7,11 @@
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
-    final WeightedQuickUnionUF uf;
-
-    final int[] openSites;
-    final int n;
-    int numOpenSites = 0;
-    static final int top = 0;
+    private final WeightedQuickUnionUF uf;
+    private final int[] openSites;
+    private final int n;
+    private int numOpenSites = 0;
+    private static final int top = 0;
 
 
     public Percolation(int n)              // create n-by-n grid, with all sites blocked
